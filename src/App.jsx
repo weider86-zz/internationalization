@@ -1,13 +1,13 @@
-import React, { useState, lazy, Suspense } from 'react'
+import React, { useState, lazy, Suspense } from "react";
 
 const Warning = lazy(async () => ({
-  default: (await import(/* webpackChunkName: "other" */ './Warning')).Warning,
-}))
+  default: (await import(/* webpackChunkName: "other" */ "./Warning")).Warning,
+}));
 
 export const App = () => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-  const loading = () => <p>Loading...</p>
+  const loading = () => <p>Loading...</p>;
 
   return (
     <>
@@ -22,5 +22,5 @@ export const App = () => {
         </Suspense>
       )}
     </>
-  )
-}
+  );
+};

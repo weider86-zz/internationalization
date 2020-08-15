@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from '../node_modules/react'
+import React, { useState, useEffect } from "../node_modules/react";
 
 export const Header = () => {
-  const [headerTitle, setHeaderTitle] = useState('Header Title')
+  const [headerTitle, setHeaderTitle] = useState("Header Title");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setHeaderTitle('Mercado Dibre')
-    }, 5000)
-    return () => clearTimeout(timer)
-  }, [])
+      setHeaderTitle("Mercado Dibre");
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div>
@@ -26,5 +26,5 @@ export const Header = () => {
       </ul>
       <hr />
     </div>
-  )
-}
+  );
+};
