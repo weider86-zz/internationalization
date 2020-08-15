@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --open --config webpack.config.dev.js",
+    "start": "webpack-dev-server --open --config webpack.config.dev.js",
     "test": "jest",
     "format": "pretty-quick",
     "lint": "eslint ./"
@@ -58,7 +58,10 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
+    "i18next": "^19.6.3",
+    "i18next-xhr-backend": "^3.2.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.0"
   }
 }

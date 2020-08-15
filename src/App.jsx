@@ -1,26 +1,8 @@
-import React, { useState, lazy, Suspense } from "react";
+import React from 'react';
 
-const Warning = lazy(async () => ({
-  default: (await import(/* webpackChunkName: "other" */ "./Warning")).Warning,
-}));
+import {useTranslation} from 'react-i18next';
 
 export const App = () => {
-  const [count, setCount] = useState(0);
-
-  const loading = () => <p>Loading...</p>;
-
-  return (
-    <>
-      <h1>Hello world</h1>
-      <h2>Count: {count}</h2>
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button onClick={() => setCount(count - 1)}>-</button>
-
-      {count > 10 && (
-        <Suspense fallback={loading}>
-          <Warning />
-        </Suspense>
-      )}
-    </>
-  );
+  const {t, i18n} = useTranslation();
+  return <h1>{t('hello')}</h1>;
 };

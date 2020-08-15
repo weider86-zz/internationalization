@@ -1,9 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "@babel/polyfill";
-import { App } from "./App";
-import ErrorBoundary from "./ErrorBoundary";
-import "./styles.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import '@babel/polyfill';
+import {App} from './App';
+import ErrorBoundary from './ErrorBoundary';
+import './styles.css';
+import './translations/i18n';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,5 +12,5 @@ ReactDOM.render(
       <App />
     </ErrorBoundary>
   </React.StrictMode>,
-  document.getElementById("app")
+  document.getElementById('app')
 );
