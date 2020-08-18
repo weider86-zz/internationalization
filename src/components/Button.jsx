@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 export const Button = styled.button`
   margin: 20px;
@@ -9,5 +9,8 @@ export const Button = styled.button`
   border-radius: 100%;
   border-width: 3px;
   border-style: solid;
-  border-color: ${(props) => (props.active ? "cadetBlue" : "white")};
+  border-color: ${(props) => (props.active ? 'cadetBlue' : 'white')};
+  &:hover {
+    cursor: pointer;
+  }
 `;
