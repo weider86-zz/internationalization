@@ -1,0 +1,5 @@
+{
+  "title": "Welcome to {{project}}",
+  "text": "Internationalization is a design process that ensures a product (usually a software application) can be adapted to various languages and regions without requiring engineering changes to the source code.",
+  "repo_access": "Access to the repo"
+}

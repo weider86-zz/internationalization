@@ -1,0 +1,5 @@
+{
+  "title": "Bienvenido al {{project}}",
+  "text": "Internacionalización es un proceso de diseño que garantiza que un producto (generalmente una aplicación de software) se pueda adaptar a varios idiomas y regiones sin requerir cambios de ingeniería en el código fuente.",
+  "repo_access": "Acceso al repo"
+}
