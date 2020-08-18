@@ -25,6 +25,12 @@ module.exports = {
         use: ["style-loader", "css-loader"],
         exclude: /node-modules/,
       },
+      {
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: "url-loader",
+        },
+      },
     ],
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
